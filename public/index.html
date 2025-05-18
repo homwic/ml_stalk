@@ -154,13 +154,17 @@
             margin-top: 5px;
         }
 
+        /* Loading spinner container */
+        .loading-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 15px;
+        }
+
         /* Animation for loading spinner */
         .loading {
             display: none;
-            margin-top: 20px; /* Space between the submit button and spinner */
-            text-align: center;
-            width: 100%; /* Make sure it takes up the full width */
-            position: relative; /* Ensures it aligns properly within the form */
         }
 
         .loading .spinner {
@@ -215,9 +219,11 @@
 
         <input type="submit" value="Cari username">
         
-        <!-- The spinner will be centered below the submit button -->
-        <div class="loading" id="loadingSpinner">
-            <div class="spinner"></div>
+        <!-- Loading spinner container - centered below the submit button -->
+        <div class="loading-container">
+            <div class="loading" id="loadingSpinner">
+                <div class="spinner"></div>
+            </div>
         </div>
     </form>
 
