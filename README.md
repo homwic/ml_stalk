@@ -29,82 +29,89 @@ Aplikasi web sederhana untuk melakukan *stalk* player Mobile Legends berdasarkan
 ```bash
 git clone https://github.com/username/ml-stalker.git
 cd ml-stalker
-2. Install Dependensi
-bash
-Copy
-Edit
+```
+
+### 2. Install Dependensi
+
+```bash
 npm install
+```
+
 Dependensi yang digunakan:
 
-express – Framework web untuk Node.js
+- express – Framework web untuk Node.js
+- body-parser – Untuk membaca data form yang dikirim ke server
+- node-fetch – Untuk mengambil data dari API pihak ketiga
 
-body-parser – Untuk membaca data form yang dikirim ke server
+### 3. Jalankan Server
 
-node-fetch – Untuk mengambil data dari API pihak ketiga
-
-3. Jalankan Server
-bash
-Copy
-Edit
+```bash
 node app.js
+```
+
 Akses aplikasi di browser pada:
 
-arduino
-Copy
-Edit
+```
 http://localhost:3000
-📁 Struktur Proyek
-graphql
-Copy
-Edit
+```
+
+---
+
+## 📁 Struktur Proyek
+
+```
 ml-stalker/
-├── app.js                 # Server utama menggunakan Express
+├── app.js               # Server utama menggunakan Express
 ├── public/
-│   ├── index.html         # File HTML utama (frontend)
-│   └── stalkml.jpeg       # Gambar panduan (digunakan dalam tooltip)
-├── package.json           # File konfigurasi Node.js
-🔄 Alur Kerja
-Pengguna mengisi form dengan User ID dan Server ID
+│   ├── index.html       # File HTML utama (frontend)
+│   └── stalkml.jpeg     # Gambar panduan (digunakan dalam tooltip)
+├── package.json         # File konfigurasi Node.js
+```
 
-Data dikirim ke endpoint /stalk via AJAX
+---
 
-Server melakukan validasi input (harus angka)
+## 🔄 Alur Kerja
 
-Server mengirim request ke API eksternal:
+1. Pengguna mengisi form dengan User ID dan Server ID
+2. Data dikirim ke endpoint `/stalk` via AJAX
+3. Server melakukan validasi input (harus angka)
+4. Server mengirim request ke API eksternal:
 
-bash
-Copy
-Edit
+```
 https://www.laurine.site/api/stalk/mlstalk?id=USERID&zone=ZONEID
-Jika berhasil:
+```
 
-Menampilkan username dan region
+5. Jika berhasil:
+   - Menampilkan username dan region
 
-Jika gagal:
+6. Jika gagal:
+   - Menampilkan pesan error
 
-Menampilkan pesan error
+---
 
-🖼️ Contoh Tooltip
-Tooltip digunakan untuk membantu pengguna memahami cara mengisi User ID dan Server ID dengan benar. Gambar stalkml.jpeg akan ditampilkan sebagai panduan visual.
+## 🖼️ Contoh Tooltip
 
-⚠️ Catatan Penting
-Pastikan API https://www.laurine.site/api/stalk/mlstalk sedang online
+Tooltip digunakan untuk membantu pengguna memahami cara mengisi User ID dan Server ID dengan benar. Gambar `stalkml.jpeg` akan ditampilkan sebagai panduan visual.
 
-File stalkml.jpeg harus berada di dalam folder public/
+---
 
-Input hanya boleh berupa angka (0–9)
+## ⚠️ Catatan Penting
 
-🧾 Lisensi
+- Pastikan API `https://www.laurine.site/api/stalk/mlstalk` sedang online
+- File `stalkml.jpeg` harus berada di dalam folder `public/`
+- Input hanya boleh berupa angka (0–9)
+
+---
+
+## 🧾 Lisensi
+
 Proyek ini menggunakan lisensi MIT. Silakan lihat file LICENSE untuk informasi lebih lanjut.
 
 Dibuat dengan ❤️ oleh [Nama Anda / Tim Anda]
 
-markdown
-Copy
-Edit
+---
 
+**Catatan:**  
 Silakan ganti bagian berikut sesuai kebutuhan:
 - `https://github.com/username/ml-stalker.git` → sesuaikan dengan URL GitHub Anda
 - `[Nama Anda / Tim Anda]` → isi dengan nama pembuat atau tim Anda
-
-Jika ingin README ini dijadikan versi bahasa Inggris juga, saya bisa bantu terjemahkan!
