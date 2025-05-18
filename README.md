@@ -107,11 +107,11 @@ Tooltip digunakan untuk membantu pengguna memahami cara mengisi User ID dan Serv
 
 Proyek ini menggunakan lisensi MIT. Silakan lihat file LICENSE untuk informasi lebih lanjut.
 
-Dibuat dengan ❤️ oleh [Nama Anda / Tim Anda]
+Dibuat dengan ❤️ oleh [homwic]
 
 ---
 
 **Catatan:**  
 Silakan ganti bagian berikut sesuai kebutuhan:
 - `https://github.com/username/ml-stalker.git` → sesuaikan dengan URL GitHub Anda
-- `[Nama Anda / Tim Anda]` → isi dengan nama pembuat atau tim Anda
+- `[homwic]` → isi dengan nama pembuat atau tim Anda
