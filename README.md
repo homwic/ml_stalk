@@ -14,8 +14,8 @@ Aplikasi web sederhana untuk melakukan *stalk* player Mobile Legends berdasarkan
 
 - Input User ID dan Server ID
 - Validasi input agar hanya menerima angka
-- Mengambil data dari API eksternal (`https://www.laurine.site`)
-- Tooltip bantuan dengan gambar (panduan ID & Server)
+- Fetch data dari API eksternal (`https://www.laurine.site`)
+- Tooltip bantuan dengan gambar (ID & Server)
 - Spinner loading saat menunggu hasil
 - Menampilkan hasil (username & region) atau pesan error
 - UI modern dan responsif
@@ -24,33 +24,36 @@ Aplikasi web sederhana untuk melakukan *stalk* player Mobile Legends berdasarkan
 
 ## 📦 Instalasi & Menjalankan
 
-Untuk menjalankan aplikasi ini, pertama-tama silakan **clone repositori** ke dalam folder lokal dengan perintah berikut:
+### 1. Clone Repositori
 
 ```bash
 git clone https://github.com/username/ml-stalker.git
 cd ml-stalker
-Setelah itu, lakukan instalasi dependensi Node.js yang dibutuhkan menggunakan:
-
+2. Install Dependensi
 bash
 Copy
 Edit
 npm install
-Dependensi yang digunakan antara lain: express sebagai framework web, body-parser untuk membaca data form, dan node-fetch untuk melakukan request ke API eksternal.
+Dependensi yang digunakan:
 
-Jika semua sudah terpasang, jalankan server menggunakan perintah:
+express – Framework web untuk Node.js
 
+body-parser – Untuk membaca data form yang dikirim ke server
+
+node-fetch – Untuk mengambil data dari API pihak ketiga
+
+3. Jalankan Server
 bash
 Copy
 Edit
 node app.js
-Kemudian akses aplikasi melalui browser di alamat:
+Akses aplikasi di browser pada:
 
 arduino
 Copy
 Edit
 http://localhost:3000
-Struktur proyek ini cukup sederhana, berikut gambaran direktori dan file utamanya:
-
+📁 Struktur Proyek
 graphql
 Copy
 Edit
@@ -58,13 +61,50 @@ ml-stalker/
 ├── app.js                 # Server utama menggunakan Express
 ├── public/
 │   ├── index.html         # File HTML utama (frontend)
-│   └── stalkml.jpeg       # Gambar panduan (tooltip)
-├── package.json           # Konfigurasi proyek Node.js
+│   └── stalkml.jpeg       # Gambar panduan (digunakan dalam tooltip)
+├── package.json           # File konfigurasi Node.js
 🔄 Alur Kerja
-Pengguna akan mengisi form dengan User ID dan Server ID, lalu data dikirim ke endpoint /stalk menggunakan AJAX. Server akan memvalidasi bahwa input hanya terdiri dari angka, kemudian mengirim permintaan ke API eksternal:
+Pengguna mengisi form dengan User ID dan Server ID
+
+Data dikirim ke endpoint /stalk via AJAX
+
+Server melakukan validasi input (harus angka)
+
+Server mengirim request ke API eksternal:
 
 bash
 Copy
 Edit
 https://www.laurine.site/api/stalk/mlstalk?id=USERID&zone=ZONEID
-Jika data ditemukan, maka username dan region akan ditampilkan. Jika tidak, akan muncul pesan error.
+Jika berhasil:
+
+Menampilkan username dan region
+
+Jika gagal:
+
+Menampilkan pesan error
+
+🖼️ Contoh Tooltip
+Tooltip digunakan untuk membantu pengguna memahami cara mengisi User ID dan Server ID dengan benar. Gambar stalkml.jpeg akan ditampilkan sebagai panduan visual.
+
+⚠️ Catatan Penting
+Pastikan API https://www.laurine.site/api/stalk/mlstalk sedang online
+
+File stalkml.jpeg harus berada di dalam folder public/
+
+Input hanya boleh berupa angka (0–9)
+
+🧾 Lisensi
+Proyek ini menggunakan lisensi MIT. Silakan lihat file LICENSE untuk informasi lebih lanjut.
+
+Dibuat dengan ❤️ oleh [Nama Anda / Tim Anda]
+
+markdown
+Copy
+Edit
+
+Silakan ganti bagian berikut sesuai kebutuhan:
+- `https://github.com/username/ml-stalker.git` → sesuaikan dengan URL GitHub Anda
+- `[Nama Anda / Tim Anda]` → isi dengan nama pembuat atau tim Anda
+
+Jika ingin README ini dijadikan versi bahasa Inggris juga, saya bisa bantu terjemahkan!
