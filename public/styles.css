@@ -1,0 +1,63 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+.server-control-panel {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.status {
+    margin-bottom: 20px;
+}
+
+.actions button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.actions button:hover {
+    background-color: #45a049;
+}
+
+.logs {
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#log-output {
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
