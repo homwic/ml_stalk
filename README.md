@@ -111,7 +111,4 @@ Dibuat dengan ❤️ oleh [homwic]
 
 ---
 
-**Catatan:**  
-Silakan ganti bagian berikut sesuai kebutuhan:
-- `[https://github.com/username/ml-stalker.git]` 
-- `[homwic]`
+
