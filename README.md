@@ -91,7 +91,7 @@ https://www.laurine.site/api/stalk/mlstalk?id=USERID&zone=ZONEID
 
 ## 🖼️ Contoh Tooltip
 
-Tooltip digunakan untuk membantu pengguna memahami cara mengisi User ID dan Server ID dengan benar. Gambar `stalkml.jpeg` akan ditampilkan sebagai panduan visual.
+Tooltip digunakan untuk membantu pengguna memahami cara mengisi User ID dan Server ID dengan benar. Gambar `stalkml.png` akan ditampilkan sebagai panduan visual.
 
 ---
 
@@ -113,5 +113,5 @@ Dibuat dengan ❤️ oleh [homwic]
 
 **Catatan:**  
 Silakan ganti bagian berikut sesuai kebutuhan:
-- `https://github.com/username/ml-stalker.git` → sesuaikan dengan URL GitHub Anda
-- `[homwic]` → isi dengan nama pembuat atau tim Anda
+- `[https://github.com/username/ml-stalker.git]` 
+- `[homwic]`
